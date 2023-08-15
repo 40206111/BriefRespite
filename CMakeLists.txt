@@ -16,9 +16,6 @@ add_subdirectory("lib/sfml")
 set(SFML_INCS "lib/sfml/include")
 link_directories("${CMAKE_BINARY_DIR}/lib/sfml/lib")
 
-### Assets ###
-file(GLOB_RECURSE SOURCE_FILES Assets/Imgs/*.* Assets/Imgs/*.*)
-
 ### Code ###
 file(GLOB_RECURSE SOURCES Code/*.cpp Code/*.h)
 file(GLOB_RECURSE SOURCES Code/*.cpp Code/*.h)
@@ -60,7 +57,6 @@ IF(WIN32)
   set(CPACK_NSIS_HELP_LINK "https://github.com/40206111/BriefRespite")
   set(CPACK_NSIS_URL_INFO_ABOUT "https://github.com/40206111/BriefRespite")
   set(CPACK_NSIS_CONTACT "https://github.com/40206111/")
-  set(CPACK_NSIS_MUI_ICON "${CMAKE_BINARY_DIR}/Assets/imgs/icon.ico")
 ELSE()
   set(CPACK_GENERATOR ZIP)
 ENDIF(WIN32)
