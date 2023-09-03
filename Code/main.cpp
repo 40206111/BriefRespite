@@ -1,10 +1,13 @@
+#include "GameConfig.h"
 #include <SFML/Graphics.hpp>
+#include <string>
 
 using namespace sf;
 
 int main()
 {
-	RenderWindow window(VideoMode(Vector2u(800, 600)), "It's Hard To Be A Bard");	//make test window
+	std::string gameName = "It's Hard To Be A Bard v" + std::to_string(BriefRespite_VERSION_MAJOR) + '.' + std::to_string(BriefRespite_VERSION_MINOR);
+	RenderWindow window(VideoMode(Vector2u(800, 600)), gameName);	//make window
 
 	//Run game loop
 	while (window.isOpen())
