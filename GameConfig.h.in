@@ -1,0 +1,2 @@
+#define BriefRespite_VERSION_MAJOR @BriefRespite_VERSION_MAJOR@
+#define BriefRespite_VERSION_MINOR @BriefRespite_VERSION_MINOR@
